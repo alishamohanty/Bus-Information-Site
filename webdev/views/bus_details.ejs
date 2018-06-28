@@ -1,0 +1,59 @@
+
+<%include ./partials/header%>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    opacity:0.8;
+    padding:5px;
+}
+th, td {
+    cellpadding:5px;
+    padding: 15px;
+    text-align: center;
+}
+body
+{
+      background: url(http://ak2.picdn.net/shutterstock/videos/30749062/thumb/1.jpg) no-repeat center center fixed; 
+		  height:100%;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+}
+</style>
+<%count=0;%>
+<div class="container bus_details_table">
+<table>
+  <tr>
+    <th>Sl.no</th>
+    <th>BusName</th>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Arrival Time</th>
+    <th>Reaching Time</th>
+    <th>Duration of Journey</th>
+    <th>Bus Fare</th>
+  </tr>
+<%user.forEach(function(data)
+{%>
+  <%count=count+1;%>
+  <tr>
+    <td><%=count%></td>
+    <td><%=data.bustime%></td>
+    <td><%=data.source%></td>
+    <td><%=data.destination%></td>
+    <td><%=data.arrival_time%></td>
+    <td><%=data.total_time%></td>
+    <td><%=data.duration%></td>
+    <td>Rs<%=data.fare%> /-</td>
+    
+    
+  </tr>
+<% });%>
+</table>
+</div>
+<h2 class="text-center" style="color:white;">Disclaimer: The bus will leave 10mins after the arrival at the source.</h2>
+
+<%include ./partials/footer%>

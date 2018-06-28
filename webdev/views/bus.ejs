@@ -1,0 +1,46 @@
+<%include partials/header%>
+<style>
+	body
+	{
+		
+		  background: url(https://images7.alphacoders.com/317/thumb-1920-317196.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	}
+</style>
+     <form action="/bus_details" method="post">
+		<div class="container mybus">
+					<div class="text-center">
+								<div class="row">
+									<div class="col-md-6" style="justify-content: left">
+										<input type="text" name="sourceCityId" class="inputText" placeholder="Source City">
+									</div>
+									<div class="col-md-6" style="justify-content: right">
+										<select class="selectText" id="sourceSelect">
+											<option value="1">Source State</option>
+											<option value="odisha">Odisha</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6" style="justify-content: right">
+										<input type="text" name="destinationCityId" class="inputText" placeholder="Destination City">
+									</div>
+									<div class="col-md-6" style="justify-content: left">
+										<select class="selectText" id="destinationSelect">
+											<option value="1">Destination State</option>
+											<option value="odisha">Odisha</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<input type="submit" value="search" class="button">
+								</div>
+							</div>
+							
+		</div>
+</form>
+
+<%include partials/footer%>

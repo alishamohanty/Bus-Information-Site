@@ -1,0 +1,115 @@
+.contact_details
+{
+    margin-top: 150px;
+    color:white;
+}
+.team
+{
+    margin-top: 100px;
+}
+.about_page
+{
+     width:80%;
+     margin-top: 170px;
+     padding: 20px;
+     color:white;
+     padding-left: 17%;
+     /*background:pink;*/
+     /*opacity:0.4;*/
+}
+/*div.about_page p {*/
+/*  margin: 5%;*/
+/*  font-weight: bold;*/
+/*  color: #000000;*/
+/*}*/
+.img-rounded
+{
+ height:150px;
+ width:160px;
+}
+.mybus
+{
+    padding-top:70px;  
+    background:black;
+    opacity:0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin:0 auto;
+    margin-top:300px;
+}
+.register_page
+{
+  margin-top: 200px;  
+  width:800px;
+  justify-content:center;
+  display:flex;
+  
+  background-color: pink;
+}
+.bus_register_form
+{
+  margin-top: 100px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 500px;*/
+  width: 100%;
+    /*background-color: yellow;*/
+    padding:50px;
+}
+.bus_register_inbetween
+{
+    align-items:center;
+    /*background-color: grey;*/
+    padding:7px;
+    border-bottom:2px solid black;
+    width:50%;
+    /*background-color:pink;*/
+    
+}
+.inp
+{
+    width:100%;
+    outline:none;
+    border:0px;
+    background:transparent;
+    color:white;
+    font-weight:bold;
+}
+.bus_details_table
+{
+    margin-top:300px;
+    background-color:#302b63;
+    color:white;
+    justify-content:center;
+    display: flex;
+}
+.table_button
+{
+ width:2rem;
+ color:#302b63;
+ background-color:##ffd89b;
+}
+.footersection
+{
+
+    margin-top:8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0px;
+}
+
+.admin
+{
+background-color: pink;    
+}
+/*.admin_login*/
+/*{*/
+/*    position:relative;*/
+/*    display:flex;*/
+/*    background-color:pink;*/
+/*    justify-content:center;*/
+/*}*/

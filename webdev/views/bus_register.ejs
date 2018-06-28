@@ -1,0 +1,55 @@
+<%include ./partials/header%>
+<style>
+    	body
+	{
+		
+		  background: url(http://alliswall.com/file/7253/1920x1200/16:9/bus_uk_london_wallpaper.jpg) no-repeat center center fixed; 
+		  height:100%;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	}
+</style>
+<div class="bus_register_form">
+   
+    <form action="/bus_register" method="post">
+        <div class="container">
+             <h1>Bus Insertion Page</h1>
+        <div class="bus_register_inbetween">   
+        <input type="text" name="busname"     class="inp"  placeholder="Bus Name">
+        </div> 
+        <br>
+        <div class="bus_register_inbetween">
+            <input type="text" name="source_"      class="inp"  placeholder="Source of the Bus">
+        </div> 
+        <br>
+        <div class="bus_register_inbetween">
+            <input type="text" name="destination" class="inp"  placeholder="Destination of Bus">
+        </div> 
+        <br>
+        <div class="bus_register_inbetween">
+            <input type="text" name="time"        class="inp"  placeholder="Time of Arrival of Bus at the Source">
+        </div> 
+        <br>
+        <div class="bus_register_inbetween">
+            <input type="text" name="final_time"  class="inp"  placeholder="Time of reaching the Destination">
+        </div> 
+        <br>
+        <div class="bus_register_inbetween">
+            <input type="text" name="duration"    class="inp"  placeholder="Duration of Journey">
+        </div> 
+        <br>
+        <div class="bus_register_inbetween">
+            <input type="text" name="fare"        class="inp"  placeholder="Starting Fare">
+        </div>
+        <br>
+        <button class="btn btn-primary">Submit</button>
+        
+        </div>
+    </form>
+    <br>
+    
+    
+</div>
+<%include ./partials/footer%>

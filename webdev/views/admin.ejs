@@ -1,0 +1,60 @@
+<%include ./partials/header%>
+<style>
+body
+{
+  background:url(http://www.wallpapers-web.com/data/out/109/4709165-into-the-wild-wallpapers.png) no-repeat center center fixed;
+  height:100%;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+}
+.admin_login
+{
+  opacity:0.8;
+  background: black;
+	padding: 2em;
+	margin: 15% auto;
+	width: 100%;
+	max-width: 32em;
+	border-radius: 15px;
+		display: flex;
+
+	    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+.td{
+ 	align-items:center;
+ 	color:bold;
+  
+}
+.field
+{
+  width:30rem;
+}
+
+</style>
+<div class="container admin_login" style="">
+    <form action="/bus_register" method="get">
+  <div class="container td ">
+    <h1 style="color:#DCDCDC;">Bus Provider Login</h1>
+    <div class="td">
+      <input type="text" placeholder="Enter Email-id" name="email" class="field">
+    </div>
+    
+    <br>
+    <div class="td">
+      <input type="password" placeholder="Enter Password" name="psw" class="field">
+    </div>
+    <br>
+
+    <div>
+      <button type="submit" class="signupbtn btn btn-primary">Login</button>
+    </div>
+    
+    </div>
+  </div>
+  
+<% include ./partials/footer %>
